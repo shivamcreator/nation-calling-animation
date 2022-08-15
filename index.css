@@ -1,0 +1,46 @@
+
+html, body {
+    height: 100%;
+     display: flex; 
+     width:100%;
+     margin:0;
+     padding:0;
+    text-align: center;
+     align-items: center; 
+    background: linear-gradient(130deg, rgba(252,119,0,1) 0%, rgba(255,255,255,1) 50%, rgba(21,136,9,1) 100%);
+}
+.container{
+    height:100px;
+    width:100%;
+}
+.incoming-call {
+    margin: 0 auto;
+    background: #314294;
+    width: 100px;
+    height: 100px;
+    border-radius: 100%;
+    animation: call 1.5s ease infinite;
+    position: relative;
+}
+
+.caller-img {
+    position: absolute;
+    height: 40px;
+    width: 40px;
+    top: 30px;
+    left: 30px;
+}
+
+@keyframes call {
+    15% {
+        box-shadow: 0 0 0 4px rgba(49, 66, 148, 0.4);
+    }
+
+    25% {
+        box-shadow: 0 0 0 8px rgba(49, 66, 148, 0.3), 0 0 0 16px rgba(49, 66, 148, 0.2);
+    }
+
+    30% {
+        box-shadow: 0 0 0 12px rgba(49, 66, 148, 0.3), 0 0 0 24px rgba(49, 66, 148, 0.2);
+    }
+}
